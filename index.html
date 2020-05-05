@@ -1,55 +1,131 @@
 <!DOCTYPE html>
-
 <html>
-    <head> 
-        <script> src="js/script.js"</script>
-        <title> Madison London </title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'> 
     </head>
     <body> 
-        <!-- Header Menu of the Page -->
+        <!--Header Menu of the Page-->
         <header> 
             <!-- Top header menu containing 
                  logo and Navigation bar -->
             <div id="top-header"> 
+                      
                 <!-- Logo -->
                 <div id="logo"> 
-  
+                    <img src="images/logo.png" /> 
                 </div>     
+                          
                 <!-- Navigation Menu -->
                 <nav> 
-                      
+                    <ul> 
+                        <li class="active"><a href="#">Home</a></li> 
+                        <li><a href="#">About Me</a></li> 
+                        <li><a href="#">Projects</a></li> 
+                        <li><a href="#">Resume</a></li> 
+                        <li><a href="#">Contact Me</a></li> 
+                    </ul> 
                 </nav> 
             </div>     
-  
+          
             <!-- Image menu in Header to contain an Image and  
                  a sample text over that image -->
             <div id="header-image-menu"> 
-  
-            </div> 
+            <img src="images/slider.jpg"> 
+            <h2 id = "image-text"> 
+                A Basic Web Design course by GeeksforGeeks 
+            </h2> 
+        </div> 
         </header> 
-  
+
         <!-- Main content between Header and Footer -->
         <main> 
             <!-- Section 1 of Main content -->
             <section> 
-                  
+                <div id="welcome"> 
+                    <h1 class="title">Welcome to our website</h1> 
+                                                  
+                    <p> 
+                        This is a <strong>Sample Webpage</strong>, a HTML  
+                        and CSS template designed by the <a href="https://www.geeksforgeeks.org" 
+                        target="_blank" rel="nofollow">GeeksforGeeks Team</a>.  
+                        The photos in this template are designed by our 
+                        <b>Graphic Design Team</b>. This template is designed  
+                        to explain the basics of HTML and CSS in our first 
+                        Web Design course. 
+                    </p> 
+                </div>    
             </section> 
-  
+
             <!-- Section 2 of Main content -->
-            <section> 
+            <section class="container" id="section-2"> 
+                <div class="row"> 
+                    <div id="column1"> 
+                        <div class="column-title"> 
+                            <h2>GFG Content</h2> 
+                        </div> 
+                                  
+                        <p> 
+                            A Computer Science portal for geeks. It  
+                            contains well written, well thought and  
+                            well explained computer science and  
+                            programming articles, quizzes and ... 
+                        </p> 
                   
+                        <a href="https://www.geeksforgeeks.org" 
+                            target="_blank" class="button"> 
+                            Learn More 
+                        </a> 
+                    </div> 
+                              
+                    <div id="column2"> 
+                        <div class="column-title"> 
+                            <h2>GFG Practice</h2> 
+                        </div> 
+                                  
+                        <p> 
+                            A practice poratal to test your knowledge  
+                            of data structures and algorithms by solving  
+                            problems asked in interviews of many tech giants  
+                            like, Amazon, Microsoft etc. 
+                        </p> 
+                      
+                        <a href="https://practice.geeksforgeeks.org" 
+                            target="_blank" class="button"> 
+                            Learn More 
+                        </a> 
+                    </div> 
+                                  
+                    <div id="column3"> 
+                        <div class="column-title"> 
+                            <h2>GFG IDE</h2> 
+                        </div> 
+                                  
+                        <p> 
+                            An integrated development environment to  
+                            run and test your codes in almost all of  
+                            the popular and widely used programming  
+                            languages. 
+                        </p> 
+                          
+                        <a href="https://ide.geeksforgeeks.org" 
+                            target="_blank" class="button"> 
+                            Learn More 
+                        </a> 
+                    </div> 
+                </div> 
             </section> 
-  
+
             <!-- Section 3 of Main content -->
             <section> 
-                  
+                
             </section> 
         </main> 
-  
-  
+
+
         <!-- Footer Menu -->
         <footer> 
-              
+            
         </footer> 
     </body> 
 </html>
