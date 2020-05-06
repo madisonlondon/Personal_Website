@@ -88,14 +88,14 @@ ul {
 }
   
 li {
-    float: left;
+    float: right;
 }
   
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 5px 50px;
+    padding: 5px 20px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -166,3 +166,39 @@ li a {
     color: #4CAF50; 
 } 
 */
+
+.fa {
+    float: right;
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+.fa:hover {
+      opacity: 0.7;
+}
+
+.fa-facebook {
+    background: lightgray;
+    color: white;
+}
+
+.fa-linkedin {
+    background: lightgray;
+    color: white;
+}
+
+.fa-skype {
+    background: lightgray;
+    color: white;
+}
+
+.footer {
+    background-color: white;
+    color: white;
+    padding: 125px;
+  }
