@@ -113,13 +113,6 @@ nav li a {
 }
 */
 
-#welcome {    
-    overflow: hidden; 
-    width: 1000px; 
-    margin: 0px auto; 
-} 
-
-#welcome .title, 
 #projects-section .title, 
 #contact-section .title { 
     color: white;
@@ -129,10 +122,13 @@ nav li a {
     text-align: center; 
 } 
 
-#welcome p { 
-    margin-bottom: 40px; 
-    text-align: center; 
-} 
+#about-section .resume {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+      
+}
 
 #projects-section{ 
     overflow: hidden; 
