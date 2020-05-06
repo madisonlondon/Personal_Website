@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Madison London</title>
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="../js/script.js"></script>
     </head>
     <body> 
         <!--Header Menu of the Page-->
@@ -20,30 +22,32 @@
                 <!-- Navigation Menu -->
                 <nav> 
                     <ul> 
-                        <li><a href="contact.html">Contact</a></li> 
-                        <li><a href="resume.html">Resume</a></li> 
-                        <li><a href="projects.html">Projects</a></li> 
-                        <li><a href="about.html">About Me</a></li> 
-                        <li class="active"><a href="index.html">Home</a></li> 
+                        <li><a onclick="smoothScroll(document.getElementById('about-section'))">ABOUT ME</a></li> 
+                        <br>
+                        <li><a onclick="smoothScroll(document.getElementById('projects-section'))">PROJECTS</a></li> 
+                        <br>
+                        <li><a onclick="smoothScroll(document.getElementById('resume-section'))">RESUME</a></li> 
+                        <br>
+                        <li><a onclick="smoothScroll(document.getElementById('contact-section'))">CONTACT</a></li> 
                     </ul> 
                 </nav> 
             </div>     
-          
-            <!-- Image menu in Header to contain an Image and  
-                 a sample text over that image -->
-            <div id="header-image-menu"> 
-            <img src="../images/slider.jpg"> 
-            <h2 id = "image-text"> 
-                A Basic Web Design course by GeeksforGeeks 
-            </h2> 
-        </div> 
         </header> 
 
         <!-- Main content between Header and Footer -->
         <main> 
-            <!-- Section 1 of Main content 
-            <section> 
+            <section class="containter" id="about-section"> 
                 <div id="welcome"> 
+
+                <!-- Image menu in Header to contain an Image and  
+                 a sample text over that image -->
+                <div id="header-image-menu"> 
+                    <img src="../images/slider.jpg"> 
+                    <h2 id = "image-text"> 
+                        A Basic Web Design course by GeeksforGeeks 
+                    </h2> 
+                </div> 
+
                     <h1 class="title">Welcome to our website</h1> 
                                                   
                     <p> 
@@ -57,78 +61,38 @@
                     </p> 
                 </div>    
             </section> 
-            -->
-
-            <!-- Section 2 of Main content 
-            <section class="container" id="section-2"> 
-                <div class="row"> 
-                    <div id="column1"> 
-                        <div class="column-title"> 
-                            <h2>GFG Content</h2> 
-                        </div> 
-                                  
-                        <p> 
-                            A Computer Science portal for geeks. It  
-                            contains well written, well thought and  
-                            well explained computer science and  
-                            programming articles, quizzes and ... 
-                        </p> 
-                  
-                        <a href="https://www.geeksforgeeks.org" 
-                            target="_blank" class="button"> 
-                            Learn More 
-                        </a> 
-                    </div> 
-                              
-                    <div id="column2"> 
-                        <div class="column-title"> 
-                            <h2>GFG Practice</h2> 
-                        </div> 
-                                  
-                        <p> 
-                            A practice poratal to test your knowledge  
-                            of data structures and algorithms by solving  
-                            problems asked in interviews of many tech giants  
-                            like, Amazon, Microsoft etc. 
-                        </p> 
-                      
-                        <a href="https://practice.geeksforgeeks.org" 
-                            target="_blank" class="button"> 
-                            Learn More 
-                        </a> 
-                    </div> 
-                                  
-                    <div id="column3"> 
-                        <div class="column-title"> 
-                            <h2>GFG IDE</h2> 
-                        </div> 
-                                  
-                        <p> 
-                            An integrated development environment to  
-                            run and test your codes in almost all of  
-                            the popular and widely used programming  
-                            languages. 
-                        </p> 
-                          
-                        <a href="https://ide.geeksforgeeks.org" 
-                            target="_blank" class="button"> 
-                            Learn More 
-                        </a> 
-                    </div> 
-                </div> 
+            
+            <section class="container" id="projects-section"> 
+                <h1 class="title">Follow this Cute Cat . . .</h1> 
+                <a href="https://github.com/madisonlondon" target="_blank">
+                    <img src="../images/Octocat.png"> 
+                </a>
             </section> 
-            -->
+
+            <section class="container" id="resume-section"> 
+                <br>
+                <br>
+                <br>
+                <img src="../images/resume.jpg"> 
+            </section>
+
+            <section class="container" id="contact-section"> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="title">Let's Get in Touch.</h1> 
+                    <div class="socialmedia">
+                        <a href="https://www.facebook.com/maddie.london.9" target="_blank" class="fa fa-facebook"></a>
+                        <a href="mailto:maddie.london@richmond.edu" target="_blank" class="fa fa-google"></a>
+                        <a href="https://www.linkedin.com/in/madisonlondon/" target="_blank" class="fa fa-linkedin"></a>
+                        <a href="https://join.skype.com/invite/bom21bX1aJQ2" target="_blank" class="fa fa-skype"></a>
+                    </div>
+            </section>
+
             <div class="footer">
-                <a href="https://join.skype.com/invite/bom21bX1aJQ2" class="fa fa-skype"></a>
-                <a href="https://www.linkedin.com/in/madisonlondon/" class="fa fa-linkedin"></a>
-                <a href="https://www.facebook.com/maddie.london.9" class="fa fa-facebook"></a>
             </div>
         </main> 
-
-
-        <!-- Footer Menu -->
-        <footer> 
-            
-        </footer> 
     </body> 
 </html>

@@ -66,7 +66,7 @@ header {
 } 
   
 #logo { 
-    float: left; 
+    float: right; 
     padding: 10px; 
     margin: none; 
     height: 60px; 
@@ -75,29 +75,36 @@ header {
   
 #logo img { 
     width: 60%; 
-    float: left; 
+    float: right; 
     padding: 10px 0px; 
 }     
 
-ul {
+nav {
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: transparent;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+/* nav ul {
     list-style-type: none;
-    margin: 10px;
-    padding: 15px;
+    margin: 0px;
+    padding-bottom: 10px;
     overflow: hidden;
     background-color: none;
-}
+} */
   
-li {
-    float: right;
-}
   
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 5px 20px;
+nav li a {
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
-    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    display: block;
 }
   
 /*li a:hover {
@@ -112,7 +119,11 @@ li a {
     margin: 0px auto; 
 } 
 
-#welcome .title { 
+#welcome .title, 
+#projects-section .title, 
+#contact-section .title { 
+    color: white;
+    font-size: 55px;
     margin-top: 20px; 
     padding: 20px; 
     text-align: center; 
@@ -123,26 +134,29 @@ li a {
     text-align: center; 
 } 
 
-#section-2{ 
+#projects-section{ 
     overflow: hidden; 
     margin-top: 5em; 
     padding-top: 1em; 
-    border-top: 1px solid rgba(0, 0, 0, 0.2); 
+    /*border-top: 1px solid rgba(0, 0, 0, 0.2); */
     text-align: center; 
 } 
 
-.row #column1,  
-.row #column2, 
-.row #column3{ 
-        float: left; 
-        width: 320px; 
-        padding: 80px 40px 80px 40px; 
+.github #username{
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    font-size: 35px;
+    display: inline-block;
+    text-decoration: none;
 }
 
-.column-title h2{ 
-    margin: 1em 0em; 
-    font-size: 1.6em; 
-    font-weight: 700; 
+#resume-section { 
+    overflow: hidden; 
+    margin-top: 5em; 
+    padding-top: 1em; 
+    /*border-top: 1px solid rgba(0, 0, 0, 0.2); */
+    text-align: center; 
 } 
 
 .button { 
@@ -166,15 +180,19 @@ li a {
     color: #4CAF50; 
 } 
 */
-
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .fa {
     float: right;
-    padding: 20px;
+    padding: 30px;
     font-size: 30px;
     width: 20px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px 15px;
     border-radius: 50%;
   }
   
@@ -192,13 +210,18 @@ li a {
     color: white;
 }
 
+.fa-google {
+    background: lightgray;
+    color: white;
+  }
+
 .fa-skype {
     background: lightgray;
     color: white;
 }
 
 .footer {
-    background-color: white;
-    color: white;
-    padding: 125px;
-  }
+    padding: 50px;
+}
+
+
