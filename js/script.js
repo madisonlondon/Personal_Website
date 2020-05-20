@@ -21,3 +21,10 @@ window.smoothScroll = function(target) {
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
 
+window.openModal = function() {
+    modal.style.display = "block";
+}
+
+window.closeModal = function() {
+    modal.style.display = "none";
+}
