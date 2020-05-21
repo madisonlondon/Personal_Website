@@ -5,7 +5,7 @@ html, body {
 body { 
     margin: 0px; 
     padding: 0px; 
-    background-image: url(../images/background.png);
+    background-image: white;
     background-repeat: no-repeat;
     background-attachment: scroll;
     font-family: 'Muli'; 
@@ -46,11 +46,11 @@ header {
     text-align: center;
     position: fixed;
     left: 1100px;
-    bottom: 690px;
+    bottom: 550px;
 } 
   
 #logo img{ 
-    width: 35%; 
+    width: 60%; 
     float: right; 
     padding: 10px 0px; 
     cursor: pointer;
@@ -101,7 +101,7 @@ nav li a {
     padding: 6px 8px 6px 0px;
     text-decoration: none;
     font-size: 18px;
-    color: white;
+    color: #0063FF;
     display: block;
     cursor: pointer;
 }
@@ -110,117 +110,44 @@ nav li a:hover {
     opacity: 0.7;
 }
 
-#about-section .intro .hello {
-    font-family: 'Heebo';
-    color: white;
-    font-size: 45px;
-    margin-top: 90px; 
-    padding: 20px; 
-    text-align: center;
-    position: fixed;
-    left: 250px;
-    bottom: 560px;
-}
+#welcome 
+{    overflow: hidden; 
+    width: 1000px; 
+    margin: 0px auto; 
+} 
 
-#about-section .intro .name {
-    font-family: 'Heebo';
+#welcome .title{ 
+    margin-top: 20px; 
+    padding: 20px; 
+    font-size: 35px;
+    text-align: center; 
     color: black;
-    font-size: 45px;
-    margin-top: 90px; 
-    padding: 20px; 
-    text-align: center;
-    position: fixed;
-    left: 250px;
-    bottom: 505px;
-}
-
-#about-section .intro .d1 {
-    font-family: 'Muli';
-    color: white;
-    font-size: 20px;
-    margin-top: 90px; 
-    padding: 20px; 
-    text-align: center;
-    position: absolute;
-    left: 250px;
-    bottom: 455px;
-}
-
-#about-section .intro .d2 {
-    font-family: 'Muli';
-    color: white;
-    font-size: 20px;
-    margin-top: 90px; 
-    padding: 20px; 
-    text-align: center;
-    position: absolute;
-    left: 250px;
-    bottom: 425px;
-}
-
-#about-section .intro .d3 {
-    font-family: 'Muli';
-    color: white;
-    font-size: 20px;
-    margin-top: 90px; 
-    padding: 20px; 
-    text-align: center;
-    position: absolute;
-    left: 250px;
-    bottom: 395px;
-}
-
-#about-section .intro .d4 {
-    font-family: 'Muli';
-    color: white;
-    font-size: 20px;
-    margin-top: 90px; 
-    padding: 20px; 
-    text-align: center;
-    position: absolute;
-    left: 250px;
-    bottom: 365px;
-}
-
-#about-section button {
     font-family: 'Heebo';
-    font-size: 15px;
-    margin-top: 90px; 
-    padding: 15px 40px 15px 40px; 
-    text-align: center;
-    position: absolute;
-    left: 272px;
-    bottom: 310px;
-    color: white;
-    cursor: pointer;
-    border: 2px solid white;
-    background-color: #0063FF;
-    z-index: 9999;
-}
+} 
 
-#about-section button:hover {
-    opacity: 0.7;
-}
+#welcome p{ 
+    font-family: 'Muli';
+    color: black;
+    font-size: 20px;
+    margin-bottom: 40px; 
+    text-align: center; 
+} 
 
-#about-section button {
-    cursor: pointer;
-}
+.column {
+    width: 100%;
+  }
 
-#about-section .resume {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-      
-}
-
-#headshot img{ 
-    width: 30%; 
-    position: absolute;
-    left: 800px;
-    bottom: 290px;
-    box-shadow: 10px 10px 10px rgba(0.2, 0.2, 0.2, 0.2);
-}  
+  .column img {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .footer .title { 
     float:right;
