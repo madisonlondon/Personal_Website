@@ -61,25 +61,10 @@ header {
     text-align: center; 
 } 
   
-#top-header { 
-          
+#top-header {        
     text-align: center; 
     height: 60px; 
 } 
-  
-#logo { 
-    float: right; 
-    padding: 10px; 
-    margin: none; 
-    height: 60px; 
-    width: 30%; 
-} 
-  
-#logo img { 
-    width: 60%; 
-    float: right; 
-    padding: 10px 0px; 
-}     
 
 nav {
     width: 150px;
@@ -91,15 +76,6 @@ nav {
     overflow-x: hidden;
     padding: 8px 0;
 }
-
-/* nav ul {
-    list-style-type: none;
-    margin: 0px;
-    padding-bottom: 10px;
-    overflow: hidden;
-    background-color: none;
-} */
-  
   
 nav li a {
     padding: 6px 8px 6px 0px;
@@ -113,7 +89,6 @@ nav li a {
 nav li a:hover {
     opacity: 0.7;
 }
-
 
 #about-section .intro .hello {
     font-family: 'Heebo';
@@ -129,7 +104,7 @@ nav li a:hover {
 
 #about-section .intro .name {
     font-family: 'Heebo';
-    color: white;
+    color: black;
     font-size: 35px;
     margin-top: 90px; 
     padding: 20px; 
@@ -211,15 +186,6 @@ nav li a:hover {
     cursor: pointer;
 }
 
-#projects-section .title, 
-#translations-section .title { 
-    color: black;
-    font-size: 55px;
-    margin-top: 20px; 
-    padding: 20px; 
-    text-align: center; 
-} 
-
 #about-section .resume {
     display: block;
     margin-left: auto;
@@ -227,60 +193,6 @@ nav li a:hover {
     width: 50%;
       
 }
-
-#projects-section{ 
-    overflow: hidden; 
-    margin-top: 5em; 
-    padding-top: 1em; 
-    /*border-top: 1px solid rgba(0, 0, 0, 0.2); */
-    text-align: center; 
-} 
-
-.github #username{
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 0px;
-    font-size: 35px;
-    display: inline-block;
-    text-decoration: none;
-}
-
-#projects-section .octocat:hover {
-    opacity: 0.7;
-}
-
-#translations-section .works { 
-    color: white;
-    font-size: 25px;
-    text-align: center; 
-    list-style: inside;
-    margin-left: 350px;
-    text-decoration: none;
-} 
-
-#translations-section .works:hover {
-    opacity: 0.7;
-}
-
-
-#translations-section .description { 
-    color: white;
-    font-size: 20px;
-    text-align: center; 
-    list-style: inside;
-    margin-left: 400px;
-    width: 100px;
-} 
-
-#resume-section { 
-    overflow: hidden; 
-    margin-top: 5em; 
-    padding-top: 1em; 
-    /*border-top: 1px solid rgba(0, 0, 0, 0.2); */
-    text-align: center; 
-    color: white; 
-    font-size: 12px;
-} 
 
 .footer .title { 
     float:right;
@@ -355,3 +267,52 @@ nav li a:hover {
         width: 320px; 
         padding: 80px 40px 80px 40px; 
 } 
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+  
+.close {
+    cursor: pointer;
+    color: lightgray;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#myModal .works { 
+    color: black;
+    font-size: 25px;
+    text-align: center; 
+    list-style: inside;
+    margin-left: 350px;
+    text-decoration: none;
+} 
+
+#myModal .works:hover {
+    opacity: 0.7;
+}
