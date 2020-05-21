@@ -40,6 +40,21 @@ header {
     overflow: hidden; 
 } 
 
+#logo{ 
+    margin-top: 90px; 
+    padding: 20px; 
+    text-align: center;
+    position: fixed;
+    left: 1100px;
+    bottom: 550px;
+} 
+  
+#logo img{ 
+    width: 60%; 
+    float: right; 
+    padding: 10px 0px; 
+}   
+
 #header-image-menu { 
     top: 10px; 
     position: relative; 
@@ -197,12 +212,13 @@ nav li a:hover {
 .footer .title { 
     float:right;
     color: black;
-    font-size: 40px;
+    font-family: 'Heebo';
+    font-size: 35px;
     margin-top: 20px; 
     padding: 20px; 
     text-align: center; 
     position: fixed;
-    left: 1020px;
+    left: 1050px;
     bottom: 90px;
 } 
 
