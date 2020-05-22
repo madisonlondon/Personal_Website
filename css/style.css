@@ -369,7 +369,8 @@ nav li a:hover {
     font-size: 20px;
     margin-bottom: 40px; 
     text-align: left; 
-    width: 200px;
+    width: 400px;
+    bottom: 505px;
 } 
 
 #ital-to-english .title,
