@@ -10,10 +10,7 @@
     </head>
     <body> 
         <div class="home-background"> 
-        <!--Header Menu of the Page-->
         <header> 
-            <!-- Top header menu containing 
-                 logo and Navigation bar -->
             <div id="top-header"> 
                       
                 <div id="logo"> 
@@ -28,70 +25,70 @@
                         <br>
                         <li><a href="https://github.com/madisonlondon" target="_blank">PROJECTS</a></li> 
                         <br>
-                        <li><a href="translation.html">TRANSLATIONS</a></li> 
+                        <li><a href="translations.html">TRANSLATIONS</a></li> 
                     </ul> 
                 </nav> 
             </div>     
         </header> 
 
-            <section id="about-section"> 
-                <div class="intro"> 
-                    <h1 class="hello">Hello,</h1> 
-                    <h1 class="name">I Am Madison London</h1> 
-                    <p class="d1">I'm a Computer Science and Italian student</p> 
-                    <p class="d2">at the University of Richmond with a </p> 
-                    <p class="d3">passion for the intersection of business</p> 
-                    <p class="d4">and technology.</p> 
-                </div>
-                <form action="../pdfs/resume.pdf" method="get" target="_blank">
-                    <button type="submit">View My Resume</button>
-                </form>
+        <section id="about-section"> 
+            <div class="intro"> 
+                <h1 class="hello">Hello,</h1> 
+                <h1 class="name">I Am Madison London</h1> 
+                <p class="d1">I'm a Computer Science and Italian student</p> 
+                <p class="d2">at the University of Richmond with a </p> 
+                <p class="d3">passion for the intersection of business</p> 
+                <p class="d4">and technology.</p> 
+            </div>
+            <form action="../pdfs/resume.pdf" method="get" target="_blank">
+                <button type="submit">View My Resume</button>
+            </form>
 
-                <div id="headshot"> 
-                        <img src="../images/gradpic.JPG">
-                </div>  
-            </section> 
+            <div id="headshot"> 
+                    <img src="../images/gradpic.JPG">
+            </div>  
+        </section> 
 
-            <div id="myModal" class="modal">
+        <div id="myModal" class="modal">
 
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <ul> 
-                    <li><a href="https://blog.richmond.edu/italiantransnationalwriters/anilda-ibrahimi-rosso-come-una-sposa/" 
-                        target="_blank" class="works">Rosso Come Una Sposa by Anilda Ibrahimi (Italian to English)</a></li> 
-                    <li><a href="../pdfs/regina.pdf" target="_blank" class="works">La Regina delle Tenebre by Grazie Deledda (Italian to English)</a></li> 
-                </ul>
-                </div>
-              
-              </div>
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <ul> 
+                <li><a href="https://blog.richmond.edu/italiantransnationalwriters/anilda-ibrahimi-rosso-come-una-sposa/" 
+                    target="_blank" class="works">Rosso Come Una Sposa by Anilda Ibrahimi (Italian to English)</a></li> 
+                <li><a href="../pdfs/regina.pdf" target="_blank" class="works">La Regina delle Tenebre by Grazie Deledda (Italian to English)</a></li> 
+            </ul>
+            </div>
             
-            <script>
-                // Get the modal
-                var modal = document.getElementById("myModal");
-                
-                // Get the button that opens the modal
-                var btn = document.getElementById("myBtn");
-                
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-                
-                // When the user clicks the button, open the modal 
-                btn.onclick = function() {
-                  modal.style.display = "block";
+         </div>
+            
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                modal.style.display = "none";
                 }
-                
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function() {
-                  modal.style.display = "none";
-                }
-                
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function(event) {
-                  if (event.target == modal) {
-                    modal.style.display = "none";
-                  }
-                }
-            </script>
+            }
+        </script>
 
             <div class="footer">
                 <div class="row"> 
@@ -110,7 +107,6 @@
                     </div> 
                 </div> 
             </div>
-        
         </div>
     </body> 
 </html>
