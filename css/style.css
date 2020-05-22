@@ -353,9 +353,10 @@ nav li a:hover {
 } 
           
 #translated-works .title { 
+    float: left;
     font-family: 'Heebo';
     color: black;
-    font-size: 45px;
+    font-size: 55px;
     margin-top: 20px; 
     padding: 20px; 
     text-align: center; 
