@@ -352,7 +352,7 @@ nav li a:hover {
     margin: 0px auto; 
 } 
           
-#translated-works .title { 
+#intro-translations .title { 
     float: left;
     font-family: 'Heebo';
     color: black;
@@ -362,15 +362,32 @@ nav li a:hover {
     text-align: center; 
 } 
           
-#translated-works .sub { 
-    font-family: 'Heebo';
+#translated-works p { 
+    float: left;
+    font-family: 'Muli';
     color: white;
-    font-size: 30px;
+    font-size: 25px;
+    margin-bottom: 40px; 
+    text-align: center; 
+} 
+
+#ital-to-english .title,
+#english-to-ital .title { 
+    float: left;
+    font-family: 'Heebo';
+    color: black;
+    font-size: 55px;
     margin-top: 20px; 
     padding: 20px; 
     text-align: center; 
-}  
-#translated-works p { 
+} 
+          
+#ital-to-english p,
+#english-to-ital p { 
+    float: left;
+    font-family: 'Muli';
+    color: black;
+    font-size: 25px;
     margin-bottom: 40px; 
     text-align: center; 
 } 
