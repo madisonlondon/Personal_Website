@@ -11,16 +11,6 @@ body {
     font-family: 'Muli'; 
     font-size: 12pt; 
 } 
-
-body #translation-background { 
-    margin: 0px; 
-    padding: 0px; 
-    background-image: #0063FF;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    font-family: 'Muli'; 
-    font-size: 12pt; 
-} 
           
 h1, h2, h3 { 
     margin: 0; 
@@ -384,13 +374,24 @@ nav li a:hover {
     bottom: 400px;
 } 
           
-#list .works{ 
-    position: relative;
-    color: black;
-    font-size: 25px;
-    text-align: center; 
-    margin-left: 250px;
+#list {
+    position: fixed;
+    z-index: 1;
+    left: 240px;
+    bottom: 250px;
+    background: transparent;
+    overflow-x: hidden;
+}
+  
+#list li a {
+    padding: 6px 8px 6px 0px;
     text-decoration: none;
-    top: 300px;
-    left: -10px;
-} 
+    font-size: 30px;
+    color: black;
+    display: block;
+    cursor: pointer;
+}
+  
+#list li a:hover {
+    opacity: 0.7;
+}
